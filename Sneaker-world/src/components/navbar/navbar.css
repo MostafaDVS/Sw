@@ -1,0 +1,138 @@
+.sw__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+.sw__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sw__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.sw__navbar-links_logo img {
+    image-rendering: optimizeQuality;
+    height: 30px;
+    width: 120px;
+    margin: 0rem;
+    padding: 0rem;
+    align-self: flex-start;
+
+}
+
+.sw__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sw__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sw__navbar-links_container p,
+.sw__navbar-sign p,
+.sw__navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.sw__navbar-sign button,
+.sw__navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: rgb(255, 255, 255);
+    background: rgb(192, 3, 3);
+    font-family: var(--font-family);
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sw__navbar-menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+.sw__navbar-menu svg {
+    cursor: pointer;
+}
+
+.sw__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: black;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.sw__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.sw__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .sw__navbar-links_container {
+        display: none;
+    }
+
+    .sw__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sw__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sw__navbar {
+        padding: 2rem;
+    }
+
+    .sw__navbar-sign {
+        display: none;
+    }
+
+    .sw__navbar-menu_container {
+        top: 20px;
+    }
+
+    .sw__navbar-menu_container-links-sign {
+        display: block;
+    }
+}

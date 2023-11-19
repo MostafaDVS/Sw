@@ -143,3 +143,9 @@
         display: block;
     }
 }
+.sw_logo{
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-family);
+ 
+}

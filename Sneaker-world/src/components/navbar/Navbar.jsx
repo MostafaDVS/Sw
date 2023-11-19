@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="sw__navbar">
       <div className="sw__navbar-links">
         <div className="sw__navbar-links_logo">
-          <img src={logo} />
+          <h1 className='sw_logo'>SW</h1>
         </div>
         <div className="sw__navbar-links_container">
           <p><a href="#home">HOME</a></p>
